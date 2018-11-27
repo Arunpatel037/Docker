@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t arunpatel/docker -f Dockerfile.dev .
 script:
-  - docker run arunpatel/Docker npm run test -- --coverage
+  - docker run arunpatel/docker npm run test -- --coverage
