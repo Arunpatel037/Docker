@@ -2,6 +2,6 @@ sudo: required
 services: 
   - docker
 before_install:
-  - docker build -t arunpatel/Docker -f Dockerfile.dev .
+  - docker build -t arunpatel/docker -f Dockerfile.dev .
 script:
   - docker run arunpatel/Docker npm run test -- --coverage
